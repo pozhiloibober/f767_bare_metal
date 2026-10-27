@@ -1,10 +1,5 @@
 #include <stdint.h>
 
-#define SRAM_START (0x20000000U)   // Адрес начала SRAM
-#define SRAM_SIZE (512U * 1024U)   // Размер SRAM
-#define SRAM_END (SRAM_START + SRAM_SIZE) // Конец SRAM
-#define STACK_POINTER_INIT_ADDRESS (SRAM_END) // Указатель стека
-
 #define ISR_VECTOR_SIZE_WORDS 126   // Количество векторов прерываний
 
 extern uint32_t _estack;
