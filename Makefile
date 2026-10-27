@@ -4,7 +4,7 @@ OBJCOPY = arm-none-eabi-objcopy
 SIZE    = arm-none-eabi-size
 
 # ---- Флаги ----
-CFLAGS  = -mcpu=cortex-m7 -mthumb -Wall -Wextra -O0 -g
+CFLAGS  = -mcpu=cortex-m7 -mthumb -Wall -Wextra -O0 -g -I CMSIS/Inc
 LDFLAGS = -mcpu=cortex-m7 -mthumb -nostdlib -T linker.ld -Wl,-Map=blink.map
 
 # ---- Файлы ----
